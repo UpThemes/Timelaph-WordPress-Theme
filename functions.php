@@ -28,20 +28,20 @@ function timelaph_setup_theme() {
 }
 add_action( 'after_setup_theme', 'timelaph_setup_theme' );
 
-function theme_init(){
+function timelaph_enqueue_scripts(){
 	
 	wp_enqueue_script( 'jquery.infieldlabel', get_bloginfo('template_url') . "/js/jquery.infieldlabel.js", array("jquery") );
 	wp_enqueue_script( 'global', get_bloginfo('template_url') . "/js/global.js", array("jquery.infieldlabel") );
 	
 }
 
-add_action('after_setup_theme','theme_init');
+add_action( 'wp_enqueue_scripts','timelaph_enqueue_scripts' );
 
-function custom_styles(){
+function timelaph_custom_styles(){
 
-global $up_options;
+	global $up_options;
 
-?>
+	?>
 
 <style type="text/css">
 
@@ -53,14 +53,13 @@ body{
 
 #container{
 	width: <?php echo $up_options->page_width; ?>;
-
+}
 
 </style>
 
-<?php
+	<?php
 
 }
-
-add_action('wp_head','custom_styles');
+add_action( 'wp_head','timelaph_custom_styles' );
 
 ?>
