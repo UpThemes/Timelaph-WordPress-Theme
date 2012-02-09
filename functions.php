@@ -62,4 +62,16 @@ body{
 }
 add_action( 'wp_head','timelaph_custom_styles' );
 
+
+/**
+ * Filter wp_title
+ */
+function timelaph_filter_wp_title( $title ) {
+	if( is_front_page() ) {
+		$title = esc_attr( get_bloginfo( 'title' ) ) . " - " . esc_attr( get_bloginfo( 'description' ) );
+	}
+	return $title;
+}
+add_filter( 'wp_title', 'timelaph_filter_wp_title' );
+
 ?>
