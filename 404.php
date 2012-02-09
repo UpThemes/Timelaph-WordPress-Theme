@@ -5,18 +5,18 @@
 		<div id="container">
 		
 			<div id="branding">
-			<a id="logo" href="<?php bloginfo('url'); ?>">
+			<a id="logo" href="<?php echo home_url(); ?>">
 			<img src="
 			<?php
 					if($up_options->logo):
 						echo $up_options->logo;
 					endif;
-			?>" alt="<?php bloginfo('name'); ?>">
+			?>" alt="<?php esc_attr( bloginfo( 'name' ) ); ?>">
 			</a>
 			</div>
 
-			<h1><?php _e("404: Page Not Found"); ?></h1>
-			<p><?php _e("Oops. It appears you've stumbled into a black hole."); ?></p>
+			<h1><?php _e( '404: Page Not Found', 'timelaph' ); ?></h1>
+			<p><?php _e( 'Oops. It appears you\'ve stumbled into a black hole.', 'timelaph' ); ?></p>
 			
 		</div>
 		

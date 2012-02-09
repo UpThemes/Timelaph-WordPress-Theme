@@ -3,6 +3,31 @@
 // Add UpThemes Framework
 require_once('admin/admin.php');
 
+/**
+ * Theme setup functions
+ */
+function timelaph_setup_theme() {
+	/*
+	 * Enable translation
+	 * 
+	 * Declare Theme textdomain and define
+	 * location for translation files.
+	 * 
+	 * Translations can be added to the /languages
+	 * directory.
+	 *
+	 * @since	Holding Pattern 1.2
+	 */
+	load_theme_textdomain( 'timelaph', get_template_directory() . '/languages' );
+
+	$locale = get_locale();
+	$locale_file = get_template_directory() . "/languages/$locale.php";
+	if ( is_readable( $locale_file ) ) {
+		require_once( $locale_file );
+	}
+}
+add_action( 'after_setup_theme', 'timelaph_setup_theme' );
+
 function theme_init(){
 	
 	wp_enqueue_script( 'jquery.infieldlabel', get_bloginfo('template_url') . "/js/jquery.infieldlabel.js", array("jquery") );
