@@ -40,7 +40,7 @@ get_header();
 			<?php endif; ?>
 
 			<?php if( $up_options->show_rss == true ): ?>
-				<p><a class="subscribe" href="<?php rss(); ?>" title="<?php echo wp_specialchars(get_bloginfo('name'), 1) ?> <?php _e('RSS feed'); ?>" rel="alternate" type="application/rss+xml"><?php _e('Subscribe to our RSS feed'); ?></a> <?php _e('to stay updated on our progress.'); ?></p>
+				<p><a class="subscribe" href="<?php upfw_rss(); ?>" title="<?php echo wp_specialchars(get_bloginfo('name'), 1) ?> <?php _e('RSS feed'); ?>" rel="alternate" type="application/rss+xml"><?php _e('Subscribe to our RSS feed'); ?></a> <?php _e('to stay updated on our progress.'); ?></p>
 			<?php endif; ?>
 			
 		</div>
