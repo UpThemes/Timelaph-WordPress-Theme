@@ -2,18 +2,18 @@
 THEME NAME: Timelaph
 THEME URI: http://upthemes.com/themes/timelaph/
 DESCRIPTION: Park your domain in style with WordPress and Google FeedBurner.
-VERSION: 1.1
-AUTHOR:  James McDonald (designer) and Chris Wallace (developer) for <a href="http://upthemes.com">UpThemes</a> and <a href="http://designmoo.com">Designmoo</a>
+VERSION: 1.2
+AUTHOR:  UpThemes
 AUTHOR URI: http://upthemes.com
 */
 
-/* -------------------------------------------------------------- 
-  
+/* --------------------------------------------------------------
+
    Reset default browser CSS.
-   
+
    Based on work by Eric Meyer:
    * meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/
-   
+
 -------------------------------------------------------------- */
 
 html, body, div, span, object, iframe,
@@ -32,10 +32,10 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	vertical-align: baseline;
 }
 
-body { 
-  line-height: 1.5; 
-  background: #fff; 
-  margin:0; 
+body {
+  line-height: 1.5;
+  background: #fff;
+  margin:0;
 }
 
 /* Tables still need 'cellspacing="0"' in the markup. */
@@ -108,7 +108,6 @@ form,
 }
 
 #container p{
-	font-size: 0.85em;
     text-shadow: 0 -1px 0 rgb(0,0,0);
     -moz-text-shadow: 0 -1px 0 rgb(0,0,0);
     -webkit-text-shadow: 0 -1px 0 rgb(0,0,0);
@@ -145,14 +144,14 @@ input[type="text"]{
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	background: -webkit-gradient(linear, left top, left bottom, 
-								from(rgba(255,255,255,0.20)), 
-								to(rgba(255,255,255,0.14)), 
-								color-stop(0.5,rgba(255,255,255,0.13)), 
+	background: -webkit-gradient(linear, left top, left bottom,
+								from(rgba(255,255,255,0.20)),
+								to(rgba(255,255,255,0.14)),
+								color-stop(0.5,rgba(255,255,255,0.13)),
 								color-stop(0.5, rgba(255,255,255,0.12)));
-    background: -moz-linear-gradient(top, rgba(255,255,255,0.18) 0%, 
-    									  rgba(255,255,255,0.11) 50%, 
-    									  rgba(255,255,255,0.11) 51%, 
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.18) 0%,
+    									  rgba(255,255,255,0.11) 50%,
+    									  rgba(255,255,255,0.11) 51%,
     									  rgba(255,255,255,0.10) 100%);
     box-shadow: 0 -1px 0 rgba(255,255,255,0.3);
     -webkit-box-shadow: 0 -1px 0 rgba(255,255,255,0.3);
@@ -164,14 +163,14 @@ input[type="text"]{
 
 input[type="text"]:active,
 input[type="text"]:focus{
-	background: -webkit-gradient(linear, left top, left bottom, 
-								from(rgba(255,255,255,0.22)), 
-								to(rgba(255,255,255,0.16)), 
-								color-stop(0.5,rgba(255,255,255,0.15)), 
+	background: -webkit-gradient(linear, left top, left bottom,
+								from(rgba(255,255,255,0.22)),
+								to(rgba(255,255,255,0.16)),
+								color-stop(0.5,rgba(255,255,255,0.15)),
 								color-stop(0.5, rgba(255,255,255,0.14)));
-	background: -moz-linear-gradient(top, rgba(255,255,255,0.22) 0%, 
-										  rgba(255,255,255,0.16) 50%, 
-										  rgba(255,255,255,0.15) 51%, 
+	background: -moz-linear-gradient(top, rgba(255,255,255,0.22) 0%,
+										  rgba(255,255,255,0.16) 50%,
+										  rgba(255,255,255,0.15) 51%,
 										  rgba(255,255,255,0.14) 100%);
 }
 
@@ -183,7 +182,7 @@ button{
 	height: 28px;
     vertical-align: middle;
     cursor: pointer;
-    line-height: 1em;
+    line-height: 25px;
     outline: 0;
 	font-weight: bold;
     border: none;
@@ -191,13 +190,13 @@ button{
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	background: -webkit-gradient(linear, left top, left bottom,
-								from(#ff8d00), 
-								to(#ff6400), 
-								color-stop(0.5,#ff6800), 
+								from(#ff8d00),
+								to(#ff6400),
+								color-stop(0.5,#ff6800),
 								color-stop(0.5,#ff5d00));
-    background: -moz-linear-gradient(top, #ff8d00 0%, 
-    									  #ff6800 50%, 
-    									  #ff5d00 51%, 
+    background: -moz-linear-gradient(top, #ff8d00 0%,
+    									  #ff6800 50%,
+    									  #ff5d00 51%,
     									  #ff6400 100%);
     box-shadow: 0 -1px 0 #ffae00;
     -webkit-box-shadow: 0 -1px 0 #ffae00;
@@ -211,13 +210,13 @@ button:active{
     padding: 2px 8px 4px 8px;
     outline: 0;
 	background: -webkit-gradient(linear, left top, left bottom,
-								from(#ff8d00), 
-								to(#ff6400), 
-								color-stop(0.5,#ff6800), 
+								from(#ff8d00),
+								to(#ff6400),
+								color-stop(0.5,#ff6800),
 								color-stop(0.5,#ff5d00));
-    background: -moz-linear-gradient(top, #ff8d00 0%, 
-    									  #ff6800 50%, 
-    									  #ff5d00 51%, 
+    background: -moz-linear-gradient(top, #ff8d00 0%,
+    									  #ff6800 50%,
+    									  #ff5d00 51%,
     									  #ff6400 100%);
 }
 
