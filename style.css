@@ -2,7 +2,7 @@
 THEME NAME: Timelaph
 THEME URI: http://upthemes.com/themes/timelaph/
 DESCRIPTION: Park your domain in style with WordPress and Google FeedBurner.
-VERSION: 1.2
+VERSION: 1.2.1
 AUTHOR:  UpThemes
 AUTHOR URI: http://upthemes.com
 */
@@ -48,20 +48,20 @@ blockquote, q { quotes: "" ""; }
 
 a img { border: none; }
 
-html,
-body{
-	height: 100%;
-	margin: 0;
-	padding: 0;
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 
 body{
 	background: #232428 url("images/stars_bg.png") top left repeat;
+	font: 14px/21px "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #fff;
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	font: 80%/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: rgba(255,255,255,0.5);
+}
+
+input, textarea, button{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 a,
@@ -78,33 +78,20 @@ a:active{
 	color: rgba(255,255,255,1);
 }
 
-#wrapper{
-	background: url("images/fade_bottom.png") bottom left repeat-x;
-	position: absolute;
-	top: 0;
-	right: 0;
-	left: 0;
-	bottom: 0;
-}
-
 #container{
 	margin: 120px auto 0;
 	width: 300px;
-	min-height: 110px;
-	padding: 10px;
+	padding: 0;
 }
 
 #branding{
-	margin: 0 auto 30px;
+	margin: 0 auto 20px;
 	text-align: center;
 }
 
 form,
 #container p{
-	position: relative;
 	margin-bottom: 1em;
-	color: rgb(140,140,140);
-	color: rgba(255,255,255,0.5);
 }
 
 #container p{
@@ -114,33 +101,24 @@ form,
 }
 
 label,
-input[type="text"],
-button{
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-label,
-input[type="text"]{
+input{
     color: #8d8d8d;
-    text-shadow: 0 1px 0 rgba(0,0,0,0.4);
-    -moz-text-shadow: 0 1px 0 rgba(0,0,0,0.4);
-    -webkit-text-shadow: 0 1px 0 rgba(0,0,0,0.4);
-    font-size: 11px;
-    padding: 2px 8px;
-    width: 214px;
-    height: 24px;
+    padding: 8px;
+    width: 300px;
     cursor: text;
     line-height: 1em;
 }
 
 label{
-	line-height: 20px;
-	margin-top: 2px;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
 }
 
-input[type="text"]{
+input{
     border: none;
     vertical-align: middle;
+    margin-bottom: 5px;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -161,8 +139,9 @@ input[type="text"]{
     -webkit-text-shadow: 0 1px 0 rgba(0,0,0,0.4);
 }
 
-input[type="text"]:active,
-input[type="text"]:focus{
+input:active,
+input:focus{
+	outline: none;
 	background: -webkit-gradient(linear, left top, left bottom,
 								from(rgba(255,255,255,0.22)),
 								to(rgba(255,255,255,0.16)),
@@ -176,15 +155,12 @@ input[type="text"]:focus{
 
 button{
     color: #fff;
-    font-size: 0.94em;
-    padding: 1px 8px 5px 8px;
-    cursor: text;
-	height: 28px;
-    vertical-align: middle;
-    cursor: pointer;
-    line-height: 25px;
+    font-size: 14px;
+    padding: 10px 14px;
+    line-height: 1em;
     outline: 0;
 	font-weight: bold;
+	margin: 0 auto;
     border: none;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -204,6 +180,7 @@ button{
     text-shadow: 0 1px 0 rgba(0,0,0,0.4);
     -moz-text-shadow: 0 1px 0 rgba(0,0,0,0.4);
     -webkit-text-shadow: 0 1px 0 rgba(0,0,0,0.4);
+    display: block;
 }
 
 button:active{
@@ -218,6 +195,11 @@ button:active{
     									  #ff6800 50%,
     									  #ff5d00 51%,
     									  #ff6400 100%);
+}
+
+#container p.desc{
+	text-align: center;
+	margin-bottom: 20px;
 }
 
 /* =Images
@@ -256,12 +238,3 @@ img.center, img.centered {
 .wp-smiley { /* Prevent the smileys from breaking line-height */
 	max-height:12px;
 }
-
-
-
-
-
-
-
-
-

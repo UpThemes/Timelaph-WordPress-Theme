@@ -23,56 +23,6 @@ $options = array(
     "type" => "textarea",
     "default" => "Our app is currently undergoing heavy development and isn't quite ready for you just yet. Stay updated by following us on <a href='http://twitter.com/upthemes'>twitter</a>."
   ),
-  "show_email_form" => array(
-    "tab" => "general",
-    "name" => "show_email_form",
-    "title" => "Show email subscribe form?",
-    "description" => __( "Do you want to show the email subscription form (must enter a value below for this to appear)?", "platform" ),
-    "section" => "text",
-    "since" => "1.0",
-    "id" => "text",
-    "type" => "select",
-    "valid_options" => array(
-      "yes" => array(
-        "name" => "yes",
-        "title" => __( "Yes", "example" )
-      ),
-      "no" => array(
-        "name" => "no",
-        "title" => __( "No", "example" )
-      )
-    )
-  ),
-  "feedburner" => array(
-    "tab" => "general",
-    "name" => "feedburner",
-    "title" => "Feedburner",
-    "description" => __( "Add your username to redirect RSS feeds to Feedburner.", "platform" ),
-    "section" => "text",
-    "since" => "1.0",
-    "id" => "text",
-    "type" => "text"
-  ),
-  "show_rss" => array(
-    "tab" => "general",
-    "name" => "show_rss",
-    "title" => "Show link to RSS?",
-    "description" => __( "Do you want to share the link to your RSS feed?", "platform" ),
-    "section" => "text",
-    "since" => "1.0",
-    "id" => "text",
-    "type" => "select",
-    "valid_options" => array(
-      "yes" => array(
-        "name" => "yes",
-        "title" => __( "Yes", "example" )
-      ),
-      "no" => array(
-        "name" => "no",
-        "title" => __( "No", "example" )
-      )
-    )
-  ),
   "custom_form" => array(
     "tab" => "general",
     "name" => "custom_form",

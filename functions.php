@@ -8,18 +8,6 @@ include_once('inc/theme-options.php');
  * Theme setup functions
  */
 function timelaph_setup_theme() {
-	/*
-	 * Enable translation
-	 *
-	 * Declare Theme textdomain and define
-	 * location for translation files.
-	 *
-	 * Translations can be added to the /languages
-	 * directory.
-	 *
-	 * @since	Holding Pattern 1.2
-	 */
-	load_theme_textdomain( 'timelaph', get_template_directory() . '/languages' );
 
 	$args = array(
 		'default-color' => '000000',

@@ -5,8 +5,8 @@
  * Displays all of the <head> section and everything up till <div id="main">
  *
  * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
+ * @subpackage Timelaph
+ * @since Timelaph 1.2
  */
 ?><!DOCTYPE html>
 <!--[if IE 7]>
