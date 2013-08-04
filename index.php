@@ -36,7 +36,7 @@ get_header();
 
 		<?php else: ?>
 
-		<p>Please embed an HTML subscription form from <a href="http://campaignmonitor.com">CampaignMonitor</a>, <a href="http://mailchimp.com">MailChimp</a>, <a href="http://madmimi.com">Mad Mimi</a>, or another email marketing service.</p>
+		<p class="desc">Please embed an HTML subscription form from <a href="http://campaignmonitor.com">CampaignMonitor</a>, <a href="http://mailchimp.com">MailChimp</a>, <a href="http://madmimi.com">Mad Mimi</a>, or another email marketing service in your <a href="<?php echo admin_url('themes.php?page=upfw-settings'); ?>">theme options page</a>.</p>
 
 		<?php endif; ?>
 
